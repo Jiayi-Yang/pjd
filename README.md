@@ -11,11 +11,11 @@
 
 ### Result
 
-![image-20201214210046607](/Users/jay/Library/Application Support/typora-user-images/image-20201214210046607.png)
+![department](https://github.com/Jiayi-Yang/pjd/attachment/department.png)
 
-![image-20201214210404760](/Users/jay/Library/Application Support/typora-user-images/image-20201214210404760.png)
+![employee](https://github.com/Jiayi-Yang/pjd/attachment/employee.png)
 
-![image-20201214210436576](/Users/jay/Library/Application Support/typora-user-images/image-20201214210436576.png)
+![updated_salaries](https://github.com/Jiayi-Yang/pjd/attachment/updated_salaries.png)
 
 
 
