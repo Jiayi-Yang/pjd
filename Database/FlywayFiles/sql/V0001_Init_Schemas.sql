@@ -13,7 +13,7 @@ CREATE TABLE employee (
     id uuid DEFAULT uuid_generate_v4 (),
     first_name VARCHAR NOT NULL,
     last_name  VARCHAR NOT NULL,
-    salary smallint NOT NULL,
+    salary decimal(8,2) NOT NULL,
     PRIMARY KEY (id),
 	department_id uuid DEFAULT uuid_generate_v4 (),
     CONSTRAINT department_fk FOREIGN KEY (department_id) REFERENCES department (id)
@@ -21,6 +21,6 @@ CREATE TABLE employee (
 
 CREATE TABLE updated_salaries (
     employee_id uuid,
-    updated_salary smallint NOT NULL,
+    updated_salary decimal(8,2) NOT NULL,
     PRIMARY KEY (employee_id)
 );
