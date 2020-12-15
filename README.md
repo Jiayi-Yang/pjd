@@ -32,7 +32,7 @@ docker pull postgres
 ## Run PostgreSQL Image
 
 ```bas
-docker run --name pjd-db -e POSTGRES_DB=abc -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -p 5430:5432 -d postgres
+docker run --name pjd-db -e POSTGRES_DB=abc -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=${password} -p 5430:5432 -d postgres
 ```
 
 ## Connect PostgreSQL with pgAdmin
@@ -47,29 +47,12 @@ docker run --name pjd-db -e POSTGRES_DB=abc -e POSTGRES_USER=admin -e POSTGRES_P
   - Port:`5430`
   - Maintenance database:`abc`
   - Username:`admin`
-  - Password:`password`
+  - Password:`${password}`
 
 #### Step 2: Create Schema
 
 - Query Tool
 - Run `pjd/database/flywayfiles/sql/V0001_Init_Schemas.sql` in the Query Tool
-
-## DB Migrate
-
-#### Step 1: Pull Flyway Docker Image
-
-```bash
-docker pull flyway/flyway
-```
-
-#### Step 2: Run Docker Flyway Migrate
-
-- Another Option Without Modifiy Config File
-
-```bash
-docker run --rm -v /Users/jay/Documents/project/pjd/Database:/flyway/sql flyway/flyway -url=jdbc:postgresql://172.17.0.4:5432/abc -user=admin -password=password migrate
-```
-
 
 
 # Glue Setup with PyCharm Professional
