@@ -11,11 +11,11 @@
 
 ### Result
 
-![department](https://github.com/Jiayi-Yang/pjd/attachment/department.png)
+![department](https://github.com/Jiayi-Yang/pjd/blob/master/attachment/department.png)
 
-![employee](https://github.com/Jiayi-Yang/pjd/attachment/employee.png)
+![employee](https://github.com/Jiayi-Yang/pjd/blob/master/attachment/employee.png)
 
-![updated_salaries](https://github.com/Jiayi-Yang/pjd/attachment/updated_salaries.png)
+![updated_salaries](https://github.com/Jiayi-Yang/pjd/blob/master/attachment/updated_salaries.png)
 
 
 
@@ -91,7 +91,7 @@ docker pull amazon/aws-glue-libs:glue_libs_1.0.0_image_01
   - Add Content Root - `PyGlue.zip`
   - Mark `src` as `Sources`
 
-- Step2: Add Python Interpreter
+- Step 2: Add Python Interpreter
 
   - Choose Docker
   - Server: Docker-Glue
