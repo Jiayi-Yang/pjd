@@ -1,5 +1,4 @@
 from glue import sc, glueContext
-from pyspark.sql.functions import *
 import logging
 from glue.data_source import from_s3, from_db, to_db
 from glue.rule.mapping import department_etl, employee_etl, update_etl

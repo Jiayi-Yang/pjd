@@ -15,7 +15,7 @@ CREATE TABLE employee (
     last_name  VARCHAR NOT NULL,
     salary decimal(8,2) NOT NULL,
     PRIMARY KEY (id),
-	department_id uuid DEFAULT uuid_generate_v4 (),
+	department_id uuid,
     CONSTRAINT department_fk FOREIGN KEY (department_id) REFERENCES department (id)
 );
 

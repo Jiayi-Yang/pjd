@@ -1,6 +1,6 @@
 import os
 
-# S3: order json
+# S3
 BUCKET_NAME = os.environ['BUCKET_NAME']
 INPUT_FILE_NAME = os.environ['INPUT_FILE_NAME']
 
